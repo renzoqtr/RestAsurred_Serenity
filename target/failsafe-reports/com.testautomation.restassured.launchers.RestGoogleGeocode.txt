@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.testautomation.restassured.launchers.RestGoogleGeocode
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.126 sec - in com.testautomation.restassured.launchers.RestGoogleGeocode

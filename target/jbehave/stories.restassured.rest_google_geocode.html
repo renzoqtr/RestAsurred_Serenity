@@ -1,0 +1,16 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories.restassured/rest_google_geocode.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user of google geocode</div>
+<div class="element asA"><span class="keyword asA">I want to</span> get geolocation by a address</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can obtain the address geolocation</div>
+</div>
+<div class="scenario">
+<h2>Scenario: google geolocation by address</h2>
+<div class="step successful">Given I have an address 'Calazans Azul'</div>
+<div class="step successful">When I request google api for geocode with address</div>
+<div class="step successful">Then I should get response status code '200'</div>
+<div class="step successful">And I should get longitude '-75.60444' and latitude '6.269785'</div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.testautomation.restassured.launchers.RestCountries
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 21.198 sec <<< FAILURE! - in com.testautomation.restassured.launchers.RestCountries
+Then response time should be '1700' miliseconds(com.testautomation.restassured.definitions.RestCountriesDefinitions)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: 
+The Service Answer took to much time 
+expected[1700] obtained[4413]
+	at com.testautomation.restassured.definitions.RestCountriesDefinitions.responseTimeCheck(RestCountriesDefinitions.java:41)
+
+Scenario: Response Time  Time elapsed: 0.046 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+rest_countries.story  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: story failed!
+

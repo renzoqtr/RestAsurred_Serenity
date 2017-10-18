@@ -1,0 +1,28 @@
+<story path="stories.restassured/rest_countries.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user of countries rest api</inOrderTo>
+  <asA keyword="I want to">know information about countries</asA>
+  <iWantTo keyword="So that">I can get the call codes and ubication</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Response Time">
+<step outcome="successful">Given i have a capital city &apos;Bogota&apos;</step>
+<step outcome="successful">When i request the information</step>
+<step outcome="successful">Then response time should be &apos;1700&apos; miliseconds</step>
+</scenario>
+<scenario keyword="Scenario:" title="Colombia Call Code">
+<step outcome="successful">Given i have a capital city &apos;Bogota&apos;</step>
+<step outcome="successful">When i request the information</step>
+<step outcome="successful">Then i should get response status code &apos;200&apos;</step>
+<step outcome="successful">And i should get the call code &apos;57&apos;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Colombia Currency">
+<step outcome="successful">Given i have a capital city &apos;Bogota&apos;</step>
+<step outcome="successful">When i request the information</step>
+<step outcome="successful">Then i should get currency data
+<parameter><parameters>
+<names><name>code</name><name>name</name><name>symbol</name></names>
+<values><value>COP</value><value>Colombian peso</value><value>$</value></values>
+</parameters>
+</parameter></step>
+</scenario>
+</story>

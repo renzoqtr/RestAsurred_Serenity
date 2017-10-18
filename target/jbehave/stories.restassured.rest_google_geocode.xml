@@ -1,0 +1,13 @@
+<story path="stories.restassured/rest_google_geocode.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user of google geocode</inOrderTo>
+  <asA keyword="I want to">get geolocation by a address</asA>
+  <iWantTo keyword="So that">I can obtain the address geolocation</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="google geolocation by address">
+<step outcome="successful">Given I have an address &apos;Calazans Azul&apos;</step>
+<step outcome="successful">When I request google api for geocode with address</step>
+<step outcome="successful">Then I should get response status code &apos;200&apos;</step>
+<step outcome="successful">And I should get longitude &apos;-75.60444&apos; and latitude &apos;6.269785&apos;</step>
+</scenario>
+</story>

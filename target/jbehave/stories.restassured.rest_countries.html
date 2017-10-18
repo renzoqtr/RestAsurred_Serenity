@@ -1,0 +1,39 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories.restassured/rest_countries.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user of countries rest api</div>
+<div class="element asA"><span class="keyword asA">I want to</span> know information about countries</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can get the call codes and ubication</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Response Time</h2>
+<div class="step successful">Given i have a capital city 'Bogota'</div>
+<div class="step successful">When i request the information</div>
+<div class="step successful">Then response time should be '1700' miliseconds</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Colombia Call Code</h2>
+<div class="step successful">Given i have a capital city 'Bogota'</div>
+<div class="step successful">When i request the information</div>
+<div class="step successful">Then i should get response status code '200'</div>
+<div class="step successful">And i should get the call code '57'</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Colombia Currency</h2>
+<div class="step successful">Given i have a capital city 'Bogota'</div>
+<div class="step successful">When i request the information</div>
+<div class="step successful">Then i should get currency data
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>code</th><th>name</th><th>symbol</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>COP</td><td>Colombian peso</td><td>$</td></tr>
+</tbody>
+</table>
+</span></div>
+</div>
+</div>
